@@ -1,0 +1,454 @@
+@charset "utf-8";
+
+@media screen and (max-width: 1800px){
+   .design .app .appwrap div .cap h1{
+      font-size: 1.7rem;
+   }
+}
+@media screen and (max-width: 1708px){
+   .design .app .appwrap div .cap div{
+      font-size: 1.1rem;
+   }
+}
+@media screen and (max-width: 1690px){
+   header{
+      width: 130px;
+   }
+   header ul li a{
+      height: 90px;
+   }
+   .bgwrap .pinkflwr{
+      display: none;
+   }
+   .bgwrap .candytree{
+      display: none;
+   }
+   .profile .container .wrap h1{
+      font-size: 1.7rem;
+   }
+
+   /* ========coding======= */
+   .coding section .wrap{
+      padding: 2%;
+   }
+   .coding section .wrap .cont .elmt{
+      width: 30rem;
+      height: 20rem;
+   }
+   .coding section .wrap .cont .elmt .pageimg{
+      width: 24rem;
+   }
+}
+@media screen and (max-width: 1658px){
+   .design .app .appwrap div .cap .tool .apps{
+      height: 4rem;
+   }
+   .design .app .appwrap div .cap .tool p{
+      display: none;
+   }
+   .design .app .appwrap div .cap h1{
+      font-size: 1.6rem;
+   }
+   .design .app .appwrap div .mockup .appmorebtn{
+      right: -12%;
+   }
+}
+@media screen and (max-width: 1589px){
+   .design .app .appwrap div .cap h1{
+      font-size: 1.5rem;
+   }
+}
+@media screen and (max-width: 1550px){
+   .swiper-pagination-vertical.swiper-pagination-bullets, .swiper-vertical>.swiper-pagination-bullets{
+      width: 100%;
+   }
+}
+@media screen and (max-width: 1520px){
+   .design .app .appwrap div .cap h1 br{
+      display: block;
+   }
+}
+@media screen and (max-width: 1468px){
+   .design .app .appwrap div .cap .contri{
+      margin-right: 1%;
+   }
+}
+@media screen and (max-width: 1440px){
+   header{
+      width: 110px;
+   }
+   header ul li a{
+      height: 80px;
+   }
+   .bgwrap .penuttree{
+      height: 25%;
+   }
+   .profile .container .wrap h1{
+      font-size: 1.5rem;
+      margin-bottom: 4%;
+   }
+   .profile .container .wrap > div{
+      font-size: 1rem;
+   }
+   .profile .container div .wrap .nutswrap{
+      display: none;
+   }
+   .profile .container #namecard{
+      width: 40%;
+      height: 36%;
+   }
+   .profile .container #educated{
+      width: 25%;
+      height: 42%;
+   }
+   .profile .container #license{
+      width: 25%;
+      height: 42%;
+   }
+   .profile .container #tools{
+      width: 40%;
+      height: 36%;
+   }
+   .profile .container #tools ul{
+      width: 70%;
+   }
+   .profile .container #tools ul li{
+      width: 56px;
+      height: 56px;
+   }
+   .profile .container #tools ul .css{
+      background-position: -56px;
+   }
+   .profile .container #tools ul .js{
+      background-position: -112px;
+   }
+   .profile .container #tools ul .jq{
+      background-position: -168px;
+   }
+   .profile .container #tools ul .vs{
+      background-position: -224px;
+   }
+   .profile .container #tools ul .figma{
+      background-position: -280px;
+   }
+   .profile .container #tools ul .ps{
+      background-position: -336px;
+   }
+   .profile .container #tools ul .il{
+      background-position: -392px;
+   }
+   .profile .container .resume{
+      right: -60%;
+   }
+   .profile .container .resume a{
+      font-size: 1.1rem;
+   }
+   .design h1{
+      font-size: 1.5rem;
+   }
+   .design h3{
+      font-size: 1rem;
+   }
+   .design .dswrap{
+      padding: 90px 0px 90px 100px;
+   }
+   .design .app .appwrap{
+      margin: 0 0 0 10%;
+      padding: 100px 0;
+   }
+   .design .app .appwrap div .mockup .appmorebtn{
+      right: -15%; bottom: 30%;
+   }
+   .swiper-pagination-vertical.swiper-pagination-bullets, .swiper-vertical>.swiper-pagination-bullets{
+      top: 90%;
+   }
+   .swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-vertical>.swiper-pagination-bullets .swiper-pagination-bullet{
+      width: 20px;
+      height: 15px;
+      border-radius: 5px;
+      line-height: 17px;
+      font-size: 0.9rem;
+   }
+   .design .app .appwrap div .phone .moreimg div img{
+      border-radius: 10px;
+   }
+   .coding h1{
+      font-size: 1.5rem;
+   }
+   .coding section .wrap .cont .elmt{
+      width: 25rem;
+      height: 17rem;
+   }
+   .coding section .wrap .cont .elmt .pageimg{
+      width: 20rem;
+      height: 12rem;
+   }
+   .coding section .wrap .cont .elmt .pageimg h1{
+      font-size: 1.3rem;
+   }
+   .coding section .wrap .cont .elmt .pageimg .btnwrap a{
+      font-size: 0.9rem;
+      line-height: 3.5rem;
+   }
+   .coding .clon .wrap .cont .elmt .pageimg .btnwrap{
+      bottom: 15%;
+   }
+   .coding .redsgn .wrap .cont .elmt .pageimg .btnwrap{
+      height: 4rem;
+   }
+}
+@media screen and (max-width: 1024px){
+   .maintop .langbtn{
+      top: 3%;
+      width: 105px;
+      height: 55px;
+   }
+   .maintop .langbtn .nod{
+      width: 44px;
+      height: 44px;
+      right: 12%;
+   }
+   .maintop .langbtn .nod.on{
+      background-position: -44px;
+   }
+
+   header{
+      width: 100px;
+   }
+   header ul li{
+      margin-bottom: 20%;
+   }
+   header ul li a{
+      height: 70px;
+   }
+   header ul li h3{
+      font-size: 1rem;
+   }
+
+   .container .centerwrap{
+      width: 70%;
+   }
+   .container .centerwrap > li{
+      width: 4rem;
+      height: 4rem;
+   }
+   .container .centerwrap > li h1{
+      font-size: 4rem;
+   }
+
+   .profile .container .wrap > div{
+      font-size: 0.9rem;
+      line-height: 1.5rem;
+   }
+   .profile .container .resume{
+      width: 6.5rem;
+      height: 3rem;
+      right: 90%; bottom: -13%;
+   }
+   .profile .container .resume a{
+      line-height: 3rem;
+      font-size: 1rem;
+   }
+   .profile .container .wrap h1{
+      font-size: 1.3rem;
+   }
+   .profile .container #namecard .wrap .cont .capcont{
+      height: 80%;
+      margin-top: 10%;
+   }
+   .profile .container #license{
+      width: 40%;
+      height: 36%;
+      background-image: url(../images/profilebox1.png);
+   }
+   .profile .container #license .wrap .cont > div{
+      display: flex;
+      justify-content: center;
+   }
+   .profile .container #license .wrap .cont > div > p:first-child{
+      margin-right: 10px;
+   }
+   .profile .container #educated{
+      width: 40%;
+      height: 36%;
+      background-image: url(../images/profilebox1.png);
+   }
+   .profile .container #educated .wrap .capcont > div{
+      display: flex;
+      justify-content: center;
+   }
+   .profile .container #educated .wrap .capcont > div > p:first-child{
+      margin-right: 10px;
+   }
+   .profile .container #tools .wrap .cont{
+      top: 50%;
+   }
+   .profile .container #tools ul li{
+      width: 3rem;
+      height: 3rem;
+   }
+   .profile .container #tools ul .css{
+      background-position: -48px;
+   }
+   .profile .container #tools ul .js{
+      background-position: -96px;
+   }
+   .profile .container #tools ul .jq{
+      background-position: -144px;
+   }
+   .profile .container #tools ul .vs{
+      background-position: -192px;
+   }
+   .profile .container #tools ul .figma{
+      background-position: -240px;
+   }
+   .profile .container #tools ul .ps{
+      background-position: -288px;
+   }
+   .profile .container #tools ul .il{
+      background-position: -336px;
+   }
+
+   .design .app{
+      width: 70%;
+   }
+   .design .app .appwrap{
+      flex-direction: column;
+   }
+   .design .app .appwrap div .cap{
+      margin-top: 30px;
+   }
+   .design .app .appwrap .bus .cap{
+      left: 130%;
+   }
+   .design .app .appwrap div .cap h1{
+      font-size: 1.4rem;
+   }
+   .design .app .appwrap div .mockup .appmorebtn{
+      bottom: 10%;
+   }
+   .design .app .appwrap div .phone .moreimg{
+      bottom: 0;
+   }
+   .design .app .appwrap div .phone .moreimg.on{
+      bottom: 0;
+   }
+   .design .app .appwrap div .phone .moreimg .one{
+      margin-right: 10px;
+   }
+   .design .app .appwrap > div:nth-child(2){
+      margin-left: 50%;
+      flex-direction: row-reverse;
+   }
+   .design .app .appwrap .mental .cap{
+      left: -100%;
+   }
+   .design .app .appwrap .mental .mockup .appmorebtn{
+      right: 100%;
+      transform: rotate(180deg);
+   }
+   .design .app .appwrap .mental .phone .moreimg{
+      flex-direction: row-reverse;
+   }
+   .design .app .appwrap .mental .phone .moreimg .two{
+      margin-right: 10px;
+   }
+   .design .app .appwrap .mental .phone .moreimg .one{
+      margin-right: 0;
+   }
+   .design .app .appwrap .mental .phone .moreimg.on{
+      right: 150%;
+   }
+}
+
+@media screen and (max-width: 440px){
+   header{
+      display: none;
+   }
+   /* ========maintop========= */
+   .maintop .container{
+      width: 100%;
+      height: 100vh;
+      background: url(../images/mob_bg.jpg) no-repeat center/cover;
+      border-radius: 0;
+      z-index: 0;
+   }
+   .container .centerwrap{
+      width: 80%;
+      height: 90%;
+      background: radial-gradient(rgba(255, 252, 237, 1) 0%, rgba(255, 252, 237, 0.5) 30%, rgba(255, 252, 237, 0) 70%);
+      margin-top: 10%;
+   }
+   .container .centerwrap > li{
+      position: absolute;
+   }
+   .container .centerwrap > li:nth-child(1){
+      top: 36%; left: 15%;
+   }
+   .container .centerwrap > li:nth-child(2){
+      top: 36%; left: 33%;
+   }
+   .container .centerwrap > li:nth-child(3){
+      top: 36%; left: 52%;
+   }
+   .container .centerwrap > li:nth-child(4){
+      top: 36%; left: 68%;
+   }
+   .container .centerwrap > li:nth-child(5){
+      top: 46%; left: 25%;
+   }
+   .container .centerwrap > li:nth-child(6){
+      top: 46%; left: 43%;
+   }
+   .container .centerwrap > li:nth-child(7){
+      top: 46%; left: 62%;
+   }
+   .container .centerwrap > li:nth-child(8){
+      top: 56%; left: 21%;
+   }
+   .container .centerwrap > li:nth-child(9){
+      top: 56%; left: 43%;
+   }
+   .container .centerwrap > li:nth-child(10){
+      top: 56%; left: 62%;
+   }
+   .container .centerwrap > li h1{
+      font-size: 4rem;
+   }
+   /* animation */
+   .bgwrap .bbltree{
+      display: none;
+   }
+   .bgwrap .plmflwr{
+      z-index: 10;
+      top: 23%; left: 52%;
+   }
+   .bgwrap .plmflwr .top{
+      width: 120px;
+      height: 80px;
+   }
+   .bgwrap .plmflwr .bottom{
+      display: none;
+   }
+   .bgwrap .penuttree{
+      flex-direction: row-reverse;
+      width: 120px;
+      height: 220px;
+      right: 65%;
+   }
+   .bgwrap .pinkflwr{
+      display: none;
+   }
+   .bgwrap .candytree{
+      display: none;
+   }
+   .bgwrap .blinkingstar{
+      transform: rotate(90deg);
+      width: 100px;
+      height: 37px;
+      right: 73%; bottom: 30%;
+   }
+   .bgwrap .down{
+      display: block;
+   }
+}
