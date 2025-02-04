@@ -804,6 +804,7 @@ main > section{
 .design .dswrap .popup .bnr{
    top: 40%; left: 50%;
    transform: translate(-50%, -50%);
+   background-image: url(../images/book.jpg);
    display: none;
 }
 .design .dswrap .popup .bnr.on{
