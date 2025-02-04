@@ -840,6 +840,7 @@ main > section{
    box-shadow: 0 0 5px 5px #75D3F5;
    color: #33261B;
    transition: all 0.5s ease-in-out;
+   cursor: url(../images/mouse2.png) 0 0, auto !important;
 }
 .design .dswrap .popup button.on{
    right: 8%;
