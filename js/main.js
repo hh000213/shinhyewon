@@ -302,8 +302,8 @@ $('.banner img').click(function(e){
    // let fullImageSrc = `../${imageSrc}`
    console.log(imageSrc)
    let idx = $(this).index()
-   $('.popup .bnr').css({
-      'background-image' : `url(/assets/images/${imageSrc})`
+   $('.popup .bnr.on').css({
+      'background-image' : `url(${imageSrc})`
    })
    $('.popup').css({
       'overflow-y' : `hidden`
