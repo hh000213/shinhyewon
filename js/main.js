@@ -299,7 +299,7 @@ for (var i = 0; i < nameElmt.length; i++) {
 $('.banner img').click(function(e){
    e.preventDefault()
    let imageSrc = $(this).attr('src');
-   let fullImageSrc = `../${imageSrc}`
+   let fullImageSrc = `${imageSrc}`
    let idx = $(this).index()
    $('.popup .bnr').css({
       'background-image' : `url('${fullImageSrc}')`
