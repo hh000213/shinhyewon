@@ -32,7 +32,6 @@
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
    <script src="https://kit.fontawesome.com/eb184e770e.js" crossorigin="anonymous"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
    <link rel="icon" href="favicon.ico">
@@ -106,7 +105,7 @@
 
       <section class="profile scrollcontainer">
          <div class="container">
-            <div id="namecard">
+            <div id="namecard" data-aos="fade-right" data-aos-once="true">
                <div class="wrap">
                   <div class="cont">
                      <div class="capcont">
@@ -125,7 +124,7 @@
                   </div>
                </div>
             </div>
-            <div id="educated">
+            <div id="educated" data-aos="fade-down" data-aos-delay="100" data-aos-once="true">
                <div class="wrap">
                   <div class="capcont">
                      <h1>학력</h1>
@@ -147,7 +146,7 @@
                   <div class="resume"><a href="images/resume.pdf" target="_blank">이력서 보기</a></div>
                </div>
             </div>
-            <div id="license">
+            <div id="license" data-aos="fade-up" data-aos-delay="150" data-aos-once="true">
                <div class="wrap">
                   <div class="cont">
                      <h1 id="lcs">자격증</h1>
@@ -176,7 +175,7 @@
                   </div>
                </div>
             </div>
-            <div id="tools">
+            <div id="tools" data-aos="fade-left" data-aos-delay="200" data-aos-once="true">
                <div class="wrap">
                   <div class="cont">
                      <h1>사용툴</h1>
@@ -198,6 +197,7 @@
                      <span></span>
                   </div>
                </div>
+               <div class="resume"><a href="images/resume.pdf" target="_blank">이력서 보기</a></div>
             </div>
 
          </div>
@@ -416,10 +416,10 @@
       </section>
       
       <section class="wellbg">
-         <div class="wellbg1" data-1500="display: none" data-1600="display: block; top:80%;" data-4400="top: 0"></div>
-         <div class="wellbg2" data-1900="display: none" data-2000="display: block; top:80%;" data-4400="top: 0"></div>
-         <div class="wellbg3" data-2300="display: none"  data-2400="display: block; top: 80%;" data-4400="top: 0"></div>
-         <div class="wellbg4" data-2700="display: none" data-2800="display: block; top: 80%;" data-4400="top: 0"></div>
+         <div class="wellbg1"></div>
+         <div class="wellbg2"></div>
+         <div class="wellbg3"></div>
+         <div class="wellbg4"></div>
       </section>
 
       <section class="footer">
@@ -442,32 +442,28 @@
          },
          slidesPerView: 2.3,
          centeredSlides: true,
-         loop:true,
          effect: "creative",
          creativeEffect: {
             prev: {
-               shadow: true,
                translate: [0, "-60%", 0],
                scale: (0.6),
             },
             next: {
-               shadow: true,
                translate: [0, "60%", 0],
                scale: (0.6),
             },
          },
-         // autoplay: {
-         //    delay: 4000,
-         //    disableOnInteraction: false,
-         // },
+         autoplay: {
+            delay: 6000,
+            disableOnInteraction: false,
+         },
          freeMode: false,
-         mousewheel:{
-            enabled: true,
-            sensitivity: 5.5,
-         }
+         mousewheel: false
       });
+      if($(window).width() <= 440){
+         swiper1.direction = 'row'
+      }
 
-      skrollr.init();
 
       AOS.init({
          duration: "800"

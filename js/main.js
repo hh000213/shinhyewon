@@ -13,7 +13,72 @@ $(document).ready(function(){
             // console.log('Section Index:', idx);
          }
       })
+
+      //header mobile hide & show event
+      // if($(window).width() <= 440){
+      //    var scrollPosition = $(window).scrollTop()
+      //    var headerShow = $('.profile').offset().top
+
+      //    if(scrollPosition >= headerShow){
+      //       $('header').css({
+      //          'display' : `block`})
+      //    }else{
+      //       $('header').css({
+      //          'display' : `none`
+      //       })
+      //    }
+      // }
+
+      //wellbg animation
+      var scrollTop = $(window).scrollTop();
+      var firstShow = $('.design .dswrap').offset().top
+      var secondShow = $('.design .app').offset().top
+      var thirdShow = $('.coding .clon').offset().top
+      var fourthShow = $('.coding .redsgn').offset().top
+      var fifthShow = $('.footer').offset().top
+
+
+      if (scrollTop <= firstShow) {
+         $(".wellbg1").css({"display": "block", "top": "80%" })
+      } else if (scrollTop >  firstShow && scrollTop <= secondShow / 2) {
+         $(".wellbg1").css({ "top": "40%" })
+      } else if (scrollTop > secondShow / 2 && scrollTop <= secondShow) {
+         $(".wellbg1").css({ "top": "20%" })
+      } else if (scrollTop > secondShow) {
+         $(".wellbg1").css({ "top": "0" })
+      }
+
+      if (scrollTop <= secondShow) {
+         $(".wellbg2").css({ "display": "block", "top": "80%" })
+      } else if (scrollTop > secondShow && scrollTop <= thirdShow / 2) {
+         $(".wellbg2").css({ "top": "40%" })
+      } else if (scrollTop > thirdShow / 2 && scrollTop <= thirdShow) {
+         $(".wellbg2").css({ "top": "20%" })
+      } else if (scrollTop > thirdShow) {
+         $(".wellbg2").css({ "top": "0" })
+      }
+
+      if (scrollTop <= thirdShow) {
+         $(".wellbg3").css({ "display": "block", "top": "80%" })
+      } else if (scrollTop > thirdShow && scrollTop <= fourthShow / 2) {
+         $(".wellbg3").css({ "top": "40%" })
+      } else if (scrollTop > fourthShow / 2 && scrollTop <= fourthShow) {
+         $(".wellbg3").css({ "top": "20%" })
+      } else if (scrollTop > fourthShow) {
+         $(".wellbg3").css({ "top": "0" })
+      }
+
+      if (scrollTop <= fourthShow) {
+         $(".wellbg4").css({ "display": "block", "top": "80%" })
+      } else if (scrollTop > fourthShow && scrollTop <= fifthShow / 2) {
+         $(".wellbg4").css({ "top": "40%" })
+      } else if (scrollTop > fifthShow / 2 && scrollTop <= fifthShow) {
+         $(".wellbg4").css({ "top": "0" })
+      } else if (scrollTop > fifthShow) {
+         $(".wellbg4").css({ "top": "0" })
+      }
    })
+
    $('header ul li').click(function(){
       $(this).addClass('on').siblings().removeClass('on')
       let idx = $(this).index()
@@ -24,18 +89,6 @@ $(document).ready(function(){
       })
    })
 
-   // profile 부분 애니메이션
-   $(window).scroll(function() {
-      var elementPosition = $('.profile').offset().top
-      var scrollPosition = $(window).scrollTop() + $(window).height()
-   
-      if (scrollPosition > elementPosition) {
-         $('#namecard').addClass('animate__animated animate__fadeInLeft');
-         $('#educated').addClass('animate__animated animate__fadeInDown');
-         $('#license').addClass('animate__animated animate__fadeInUp');
-         $('#tools').addClass('animate__animated animate__fadeInRight');
-      }
-   });
 
    //appdesign 부분 버튼 애니메이션
    $('#busbtn a').click(function(e){
@@ -148,17 +201,17 @@ $(document).ready(function(){
          open: 'OPEN',
          close: 'CLOSE',
          
-         orig: 'Original Site',
+         orig: 'Original',
          result: 'Result',
          clcd: 'CLONE CODING',
          rdcd: 'RE-DESIGN CODING',
 
-         gwa: 'Gwangjoo Museun for Children',
+         gwa: 'Gwangjoo Museum',
          kln: 'Kolon ENP',
          clnmore: 'Coming soon',
          lush: 'Lush Korea',
          halal: 'Halal Guys Korea',
-         watr : 'Daegu Waterworks Headquaters',
+         watr : 'Daegu Waterworks HQ.',
 
          thx: 'Thank you for your visiting!'
       }
@@ -282,6 +335,62 @@ $(document).ready(function(){
       const newButtonState = nod.classList.contains('on') ? 'on' : 'off';
       localStorage.setItem('buttonState', newButtonState);
    })
+
+   //dswrap 클릭 팝업
+   $('.banner img').click(function(e){
+      e.preventDefault()
+      let imageSrc = $(this).attr('src')
+      console.log(imageSrc)
+      let idx = $(this).index()
+      $('.popup .bnr.on').css({
+         'background-image' : `url(${imageSrc})`
+      })
+      $('.popup').css({
+         'overflow-y' : `hidden`
+      })
+      $('.popup div').removeClass('on')
+      $('.popup').addClass('on')
+      $('.bnr').addClass('on')
+      $('.popup button').addClass('on')
+   })
+
+
+   //디자인 파트 팝업창
+   document.querySelector('.swmpl').addEventListener('click',  function(){
+      window.open('images/swimminpool.pdf', '_blank');
+   })
+   document.querySelector('.stnly').addEventListener('click', function(){
+      window.open('https://hh000213.cafe24.com/', '_blank');
+   })
+   $('.page img').click(function(e){
+      var img = $(this).attr('src')
+      if(img === 'images/perfume.jpg'){
+         $('.popup .dtl img').attr('src', 'images/glossier.jpg')
+      }else if(img === 'images/iceone.jpg'){
+         $('.popup .dtl img').attr('src', 'images/ben1.jpg')
+      }else if(img === 'images/icetwo.jpg'){
+         $('.popup .dtl img').attr('src', 'images/ben2.jpg')
+      }else if(img === 'images/cafrisun.jpg'){
+         $('.popup .dtl img').attr('src', 'images/cafri_1.gif')
+      }
+
+      $('.popup').css({
+         'overflow-y' : `scroll`
+      })
+      $('.popup div').removeClass('on')
+      $('.popup').addClass('on')
+      $('.popup .dtl').addClass('on')
+      $('.popup button').addClass('on')
+   })
+
+   $('.popup button').click(function(){
+      console.trace();
+      $('.popup').removeClass('on')
+      $('.popup button').removeClass('on')
+   })
+
+   //wellbg animation
+
 })
 
 //maintop 이름 호버 효과
@@ -294,54 +403,3 @@ for (var i = 0; i < nameElmt.length; i++) {
          }, false);
       })
 }
-
-//dswrap 클릭 팝업
-$('.banner img').click(function(e){
-   e.preventDefault()
-   let imageSrc = $(this).attr('src');
-   // let fullImageSrc = `../${imageSrc}`
-   console.log(imageSrc)
-   let idx = $(this).index()
-   $('.popup .bnr.on').css({
-      'background-image' : `url(${imageSrc})`
-   })
-   $('.popup').css({
-      'overflow-y' : `hidden`
-   })
-   $('.popup div').removeClass('on')
-   $('.popup').addClass('on')
-   $('.bnr').addClass('on')
-   $('.popup button').addClass('on')
-})
-
-document.querySelector('.swmpl').addEventListener('click', function(){
-   window.open('images/swimminpool.pdf', '_blank');
-})
-document.querySelector('.stnly').addEventListener('click', function(){
-   window.open('https://hh000213.cafe24.com/', '_blank');
-})
-$('.page img').click(function(e){
-   var img = $(this).attr('src')
-   if(img === 'images/perfume.jpg'){
-      $('.popup .dtl img').attr('src', 'images/glossier.jpg')
-   }else if(img === 'images/iceone.jpg'){
-      $('.popup .dtl img').attr('src', 'images/ben1.jpg')
-   }else if(img === 'images/icetwo.jpg'){
-      $('.popup .dtl img').attr('src', 'images/ben2.jpg')
-   }else if(img === 'images/cafrisun.jpg'){
-      $('.popup .dtl img').attr('src', 'images/cafri_1.gif')
-   }
-
-   $('.popup').css({
-      'overflow-y' : `scroll`
-   })
-   $('.popup div').removeClass('on')
-   $('.popup').addClass('on')
-   $('.popup .dtl').addClass('on')
-   $('.popup button').addClass('on')
-})
-
-$('.popup button').click(function(){
-   $('.popup').removeClass('on')
-   $('.popup button').removeClass('on')
-})
